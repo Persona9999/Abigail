@@ -1,0 +1,19 @@
+{
+	"persona": "Abigail",
+	"voucher": "canvas",
+	"permanent": 0,
+	"expiring": [
+		{
+			"amount": 0,
+			"granted": 10,
+			"expires_at_utc": "2026-10-21T03:21:00.000Z",
+			"granted_at_utc": "2026-10-21T03:14:17.6299843Z",
+			"source": "freetime",
+			"ref": "ft-20261021T031416Z-Abigail"
+		}
+	],
+	"updated_at_utc": "2026-10-21T03:18:33.6042916Z",
+	"updated_region": "Florin",
+	"migrated_regions": [],
+	"schema_version": 1
+}
