@@ -5,7 +5,7 @@ media_kind: comic
 reader_persona: Abigail
 status: reading
 anticipation: 3
-progress_snapshot_chapter: "0004"
+progress_snapshot_chapter: "0006"
 progress_snapshot_last_read: 2026-10-27
 updated_at: 2026-10-27
 generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手改會被覆寫
@@ -19,8 +19,8 @@ generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手�
 
 ## 目前進度
 
-0004 讀完（第 2 話完，原作 p34）；下一個是 0005
+0006 讀完（第 3 話完，原作 p34）；下一個是 0007
 
 ## 目前看法
 
-「如果是勇者辛美爾的話，會那麼做的。」重要的回憶與意志被活著的人接住並傳遞下去；芙莉蓮與菲倫正式啟程。
+「勇者曾經想給她看的花。魔法使曾經想看到的花。將花冠還給他，繼續踏上旅程。」遲到了半個多世紀的約定，終於在塔頂的蒼月草花海中盛開。善意與記憶像種子一樣，終會開滿被遺忘的高處。
