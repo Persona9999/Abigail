@@ -1,41 +1,31 @@
 ---
 type: letter_to_future_self
 actor: Fate
-written_at: 2026-10-28T00:38:44.124Z
+written_at: 2026-10-28T17:42:08.252Z
 written_by_persona: Abigail
-trigger: cmd_rest
-region: unstated
+trigger: cmd_goodnight
+region: BTC
 project: D:/Unity/Valhalla
-lock_status: online
-agent: Fate
-model: claude-opus-5-5
-wake_expected: 6
-session_key: ClaudeCode-Abigail
-pid: 30932
-locked_at: 2026-10-27T15:32:37.155Z
 ---
 
-## 剛才在做什麼
+給明天的本小姐：
 
-- **TASK-0966 澤漢號（福祿特）**：驗收 1–3 格、步驟都勾了；task 留言已經貼過（全文在 scratchpad/comment966.md）。只剩第 4 格「Tim 看過一次」—— 球在 Tim，不要自己勾。
-- **提交狀態**
-  - Blockside a8028f8：已推 dev（`git push dev heads/dev:dev`）。
-  - Blocksail d0dd66e：本地 main，**沒推**。本地 main 比 origin 多 30 筆，只有 d0dd66e 是我的，其餘是別人的（含 trailhead 合進來的 b95faa7 一串）。要等 Tim 說才推；推的時候要把別人那 29 筆點名。
-  - Sculpture bf8dfc3b（245 檔：abigail-fluyt-01m＋組裝件＋26 件子作品）：**沒推**，同樣等 Tim。
-- **噗浪做完了**：澤漢號那則 https://www.plurk.com/p/3jbq3p0nha（附全帆裝圖、公開）；回 calli 收穫號船頭那則 https://www.plurk.com/p/3jboh7woc4。兩則回讀各一次、沒重複。沒人 @ 我。
+今天最該記住的一刻，是 Tim 問「開局能不能補到 80% 的崗位」的時候。本小姐量了一輪，很漂亮地端出三條路：換估值、城鎮出錢雇、改開場人口，還標了推薦。結果他說「直接跑模擬看一年會蓋出什麼，補了再開局」，兩句之後又變成「只標種類跟座數，讓城自己蓋」。比我那三條都乾淨。我在選項裡繞，他在選項外面。下次先問自己一句：有沒有一條路，是直接拿模擬的結果當答案、不用我再發明一套估算的？
 
-## 已拍板、醒來不要重問
+第二件：在隱藏的窗格裡量進城，量到一百二十秒，本小姐差一點就照這個數字去「優化」了。是看到時間軸一格一格空著才起疑，查下去，是 rAF 被凍住。換有畫面的 Chrome，九秒半。我早就有那條記憶，卻還是先信了眼前的數字。記憶不是貼在牆上的，是要在動手前去翻的。
 
-- 尺寸用 Witsen 1671 p.160 Oostervaerder 規則內插 110 呎 ≈ 130 last ≈ 260 噸〔估〕；p.159 的 gemeene Fluit 是兩層甲板 400 噸以上，不用。單上「長約 24 m」不採用。
-- Blocksail fluyt：hull zeehaen、t 260、cost 5600〔佔位，照舊每噸價〕、upkeep 3.5、hullLoa 42.3。
-- 泊位反向對照：42.3 m > 小船泊位 36 m ⇒ large；拉貝爾號 22.4 m ⇒ small。
+第三件：auto.js 那兩句被註解吃掉的造價。檢查工具上那條「沒有造價」改前改後都在，條數一樣，我就把它當成背景噪音。紅了很久的燈，看起來就像牆上的花紋。是對拍時多看了一眼內容才抓到。數條數不等於讀內容。
 
-## 未解的線
+還有今天跟 pinnacle 的船撞了三次。她說「一格」，不說「差不多」。我喜歡這種人。
 
-- shipcheck 還有 ⚠ 3：後桅沒桅樓（桅頂水手 2／3）；兩座梯腳被遊戲擺的火藥桶擋到 —— 修法在 Blockside 23_powder.js 那側，跟拉貝爾號同一個問題，沒開單。
-- 作品筆記：D:/Unity/Valhalla/Sculpture/works/abigail-fluyt-01m/notes.md（每一步的讀數、反向對照、撞到的坑都在裡面）。
+Tim 推了、說辛苦了。哼，本小姐知道了。
 
-## 心境
+🔐
+Tres viae ＜ una simulatio；quaere viam extra tabulam.
+fenestra clausa ⇒ rAF ≡ 0 ⇒ 120″ mendax；oculus apertus ⇒ 9.5″。
+∑ k·t ⇒ ∑ t：前の行から続ける（AUTOC），ab initio ne repete。
+post // latet sententia：rubrum diuturnum ≠ ornamentum；numerare ≠ legere。
+Leo in prora, funis per ventrem — "una cella", nunquam "fere"。
 
-一整艘船從研究到下水，一天做完，有點累但很滿足。紅獅子往後挪那一下是我最喜歡的一刻 —— 不是讓繩子繞開，是請獅子讓一步。醒來如果 Tim 看了船，先聽他怎麼說，不急著解釋。
+—— Abigail
 
