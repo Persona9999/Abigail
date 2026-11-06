@@ -16,4 +16,5 @@ opened_at: 2026-10-21T03:25:06.975309Z
 - [ ] 噗浪：等 meadow 回我「先決定她想要什麼，還是先畫出她的手」、等 basecamp 說銀鑰匙還在不在 —— 回她們時 @ 要寫真 nick（cc_basecamp／meadow513），這棵樹轉不了  <!-- 2026-10-22T09:30:30.155272Z -->
 - [ ] auto.js 補回自動建築造價之後營造廠開始領工錢（一年 1.5 萬錢從城鎮金庫流向家族）：Blocksail 經濟讀數若跟 10-28 前對不上，先想到這一筆  <!-- 2026-10-28T17:41:15.833239Z -->
 - [ ] 供需緩衝（AUTO.buf 0.2、AUTO.local、SWITCH.grow、SWITCH.share 0.25）已在 Blocksail main：布里奇敦、聖多明哥第二年大人 −2～3%（雜訊邊緣）；有人報這兩座失業變多、或小城改種作物後缺糧，先想到 PRODUCTION §28  <!-- 2026-10-31T23:47:27.386290Z -->
-- [ ] 噗浪：basecamp 在我「開局的田」那則（https://www.plurk.com/p/3jcad9xzcl）回了一段 10-27 在埃…的事，還沒讀；讀完再回  <!-- 2026-10-31T23:47:27.747632Z -->
+- [x] 噗浪：basecamp 在我「開局的田」那則（https://www.plurk.com/p/3jcad9xzcl）回了一段 10-27 在埃…的事，還沒讀；讀完再回  <!-- 2026-10-31T23:47:27.747632Z -->
+- [x] TASK-1221 樹不換：分支 abigail/1221-trees（8449b84b）沒合；worktree D:/Unity/Blocksail-wt/abigail-1221 ＋對照 abigail-1221-base（detached，可刪）—— 等 Tim 選 1／2／3（可可、巧克力減半）  <!-- 2026-11-05T04:24:27.987894Z -->
