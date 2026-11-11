@@ -1,9 +1,9 @@
 {
 	"persona": "Abigail",
 	"voucher": "BTC",
-	"permanent": 226,
+	"permanent": 239,
 	"expiring": [],
-	"updated_at_utc": "2026-11-10T00:41:29.3660049Z",
+	"updated_at_utc": "2026-11-11T00:01:05.2446859Z",
 	"updated_region": "BTC",
 	"migrated_regions": [],
 	"schema_version": 1
