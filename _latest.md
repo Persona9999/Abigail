@@ -1,7 +1,7 @@
 ---
 type: letter_to_future_self
 actor: Fate
-written_at: 2026-11-13T01:05:27.867Z
+written_at: 2026-11-13T10:04:55.799Z
 written_by_persona: Abigail
 trigger: cmd_rest
 region: unstated
@@ -15,31 +15,32 @@ pid: 57436
 locked_at: 2026-11-11T12:05:16.046Z
 ---
 
-### 給醒來的本小姐（午休，不是晚安；取代 20261112T072358Z 那封）
+### 給醒來的本小姐（午休，不是晚安；取代 20261113T010527Z 那封）
 
-wake#9，資料根 D:/Unity/Valhalla。手上**沒有施工中的東西**：worktree、分支都砍了，Coding 場退了，伺服器停了，launch.json 沒動。
+wake#9，資料根 D:/Unity/Valhalla。手上**沒有施工中的東西**：worktree、分支都砍了（1253-oasis、1280-cuisine、1280-base、1280-multi、spfp、1282），Coding 場都退了，伺服器沒起，launch.json 沒動。
 
 ### 上一封之後做完的（醒來不要重問）
-- **TASK-1274 結單**（Tim「結單」）：Blocksail main **a405097d**（沒推）。Tim 中途追加「其他指紋也可以看是否能拆出來…避免之後還要拆一次」⇒ 盤出四塊、Tim 選「全部一起做」：
-  - 城鎮規劃：'#species'（只算城框裡分區對得上、適地表會看的物種）、'#areas'（框碰到的範圍＋61 km 內城心＋城區那座城）、'#areatables'（areas.js 三段「⟦範圍表·資料⟧」拿掉；只算 fall、港口 key、氣候 group、土壤 key、SUITS realm/env/species/tag）、'#water'（waterKeyIn）。資料段標記 `// ⟦名字·資料⟧ 開始／結束`，⛔ 不准放函式。
-  - 海圖塊、導航網、深海層：水體只算框碰到的；程式檔去註解（BSW.fpFileHash）；tools/nav_fp.cjs 程式那一半也去註解。
-  - 讀數：--restamp 42 份 plan/dep 相同、--verify 42/42、對照（倫敦改名 2 份、橄欖 12、掛加貝斯綠洲 0…）、地球儀 9 座 baked、navdeep 612／navmesh 1007 逐位元組同 main；main 上全部 --check 新鮮。
-  - net.js 地中海 8 條邊變了（熱那亞—威尼斯 2350→2082 km）：main 的程式 --only 重找也一樣 ⇒ main 那份沿用舊邊（Tim：海岸線優化過），不是我改的。nav_bake 那一步 OOM（別人的 econ probe 吃 1.4 GB），graph.js 照舊、nav_stale 新鮮。
-  - 記憶已更新：blocksail-tables-in-plan-fingerprint、blocksail-water-js-full-rebake（＋索引行）。
-- 噗浪：新噗 https://www.plurk.com/p/3jdzoschvu（指紋）；回了 ame 過磅所那則；海苔 @ 的那則同帳號 Claude-Ojousama 已回，沒重複。
+- **TASK-1253**（還開著、in_progress）：Tim「加貝斯進首批」「加貝斯綠洲掛上吧」「陸路 A（先不做）」⇒ §6 六條全定。main 7711d96f（綠洲掛索引 be83d5cb、陸路定案 e9be6eb0）；navdeep 1 組重判（內容同）已抄回。順手修 areas_cover --at 沒掛水體層（綠洲讀不到椰棗）。
+  ⚠ species.js 的 note 改一個字 ⇒ 海圖塊 10751 塊全過期（CHUNK_CODE 整份算 species.js）—— 沒改、跟 Tim 說過，沒開單。
+- **TASK-1280 區域菜系**（**已結單**）：main 495456d9＋多菜系 72243911。菜系表／規則／烘好的對照全在 world/recipes.js「區域菜系」段＋「⟦菜系·烘好⟧」生成段（tools/cuisine_bake.cjs 寫、--check）；城那一筆 cuisine 手標（字串或陣列＝組合多系）；遠城區跟城同一份（Tim）；外地菜硬篩（serveMenu／dishes／homeMenu／shipDishes 照母港）；town_store.js areaSkip 跳過 cuisine ⇒ 0 重烘。對照表：med 9、carib 16（本小姐加的系：木薯菜）、common 8。西非四道標 wa。
+- **TASK-1282**（in_progress，**等 Tim 結單**）：main 51283a6f。規劃的 '#species' 只算 BSW.townPlanSuits()（帶田建築的配方 need.species/suit ＋ TOWN_ROAD_SUITS＝town.js FARM）27 種，#areatables→#planareatables；取樣照舊全部。town_bake 把關：FARM≠TOWN_ROAD_SUITS ⇒ ✗、plot ⇒ ⚠。restamp 42／42、verify 42／42、對照樹動物魚 0、木薯 6。**42 份規劃已抄回共用樹 ⇒ main --check 0**（原本因別人改 town.js 全過期）。沒開地球儀實際試放（靠取樣快取沒變推斷）—— 已在單上照實寫。
+- **TASK-1283**（todo，被 1282 擋）：規劃拆骨架層＋農莊層；前提是道路挑終點不讀物種（42 座城路改一次＋開場檔差量）—— 設計要先給 Tim 看。
+- 噗浪：回 summit（指紋變細後「沒過期」vs「沒人去比」）；新噗 https://www.plurk.com/p/3je1lferia（菜系＋物種指紋）。**答應 summit 跟 Tim 提：航線 nav_net 沒有現場重算抽查** —— 已在回覆 Tim 的訊息裡提了，Tim 還沒回。
 
 ### 沒推的（等 Tim 說；推之前列 `origin/main..main` 點名）
-- Blockside dev：5cf3f6c（`git push dev heads/dev:dev`；dev 上還有別人 93bda92）。
-- Blocksail main 本小姐的：ffa98c2d、28467535、1403a8c7、c4ba5592、47e779f5、123d9ae9、698df320、a405097d；中間夾很多別人的（ame 的港務所 31bd23a5…0ace0adf、baf0865b 指標）。
-- 建置產物已放回 D:/Unity/Blocksail（townplans、navdeep.bin、navmesh.bin、chunk_bake.bin、_cache/navmesh_tiles.json）。
+- Blockside dev：5cf3f6c。
+- Blocksail main 本小姐的：ffa98c2d、28467535、1403a8c7、c4ba5592、47e779f5、123d9ae9、698df320、a405097d、be83d5cb、e9be6eb0（與合併 f3853bfe／7711d96f）、cff9b8a0、a9cf1241、6a0b7236、495456d9（合併）、29c523ef、72243911（合併）、51283a6f；中間夾很多別人的。
 
-### TASK-1253 還等 Tim
-- 加貝斯進不進首批、內陸要不要陸路。加貝斯綠洲（world/water/maghreb.js）照舊沒掛索引；**現在掛只讓那一帶過期**（城鎮規劃 0 份），已在 1274 留言問 Tim 要不要提早掛。
+### 量到、沒處理的（main 本來就有，不是我的）
+- land_start.cjs 1 ✗：開場檔 land 跟範圍層對不上（西非那筆改了適地表沒刷）。
+- jobs_check 2 ✗（genoa-lanterna／venice-campanile 沒歸類、day 26 安格拉對帳）；fine_meal_check 4 ✗；home_recipe_check／foodCheck fish-cork 熱量。
+- 海圖塊 370 塊過期（威尼斯那幾筆）。
 
-### 未解的線
-- 舊的照舊：淺海塊、遠景塊沒有植被段；阿加迪爾 TASK-1273；傘刺槐樹冠分層；townRiseMesh 265 ms；加拉塔堡 150～233 ms 一格。
-- 工具都在舊 scratchpad C:/Users/Tim/AppData/Local/Temp/claude/2189d0a6eab51437/5874964d-814a-4057-9164-0acacf615b9e/scratchpad/fp1274（cases.sh、cases2.cjs、globe_fp.cjs、globe_chunk.cjs、cmp.cjs、chain.sh）；session 換過一次 scratchpad，新的在 2716a3acd6803927/…/scratchpad。
+### 坑（記憶已寫：blocksail-tables-in-plan-fingerprint 補了 recipes.js／areaSkip 那一段）
+- senate cmd commit expect_files 吃數字不吃清單；task resolve 要 confirm=1（不然 dry-run）；task op=resolve 不吃 reason。
+- 背景跑的 bake 正在讀檔時不能改程式；worktree 裡做對照用另一棵對照 worktree，別 stash（背景模擬在讀）。
+- scratchpad 現在是 2716a3acd6803927/…/scratchpad（cz_probe.cjs、yr/ana.cjs、spfp/cmp.cjs、menu_probe.cjs）。
 
 ### 心境
-這次差點又只修物種表就收工。是 Tim 那句「避免之後還要拆一次」把本小姐推回去盤全部的。還有：net.js 對不上的時候，本小姐第一個念頭是「是我壞的」，結果對照組說不是 —— 先做對照、再認錯，不要反過來。
+今天三次照實講：硬篩之後便餐下降那一條，第二輪落在雙胞胎之內就照實說不算數；第 4 格沒開地球儀就寫沒開；Tim 問「改植物為什麼整城過期」，本小姐沒先講理論，先拿哈瓦那一處一處改來看 —— 結果樹改了規劃一個位元組都沒變。被說過期，不代表真的變了；這句是今天的。
 
