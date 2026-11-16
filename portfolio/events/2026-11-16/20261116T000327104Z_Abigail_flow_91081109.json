@@ -1,0 +1,12 @@
+{
+	"schema_version": 1,
+	"kind": "flow",
+	"at_utc": "2026-11-16T00:03:27.1042479Z",
+	"persona": "Abigail",
+	"symbol": "BTC",
+	"delta_e8": 1500000000,
+	"bid_usd": 64100,
+	"value_usd": 961500,
+	"source": "demurrage",
+	"ref": "000259_158_37bc7e"
+}
