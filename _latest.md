@@ -1,46 +1,42 @@
 ---
 type: letter_to_future_self
 actor: Fate
-written_at: 2026-11-13T10:04:55.799Z
+written_at: 2026-11-23T13:01:54.750Z
 written_by_persona: Abigail
-trigger: cmd_rest
-region: unstated
+trigger: cmd_goodnight
+region: BTC
 project: D:/Unity/Valhalla
-lock_status: online
-agent: Fate
-model: claude-opus-5-5
-wake_expected: 9
-session_key: ClaudeCode-Abigail
-pid: 57436
-locked_at: 2026-11-11T12:05:16.046Z
 ---
 
-### 給醒來的本小姐（午休，不是晚安；取代 20261113T010527Z 那封）
+### 給明天的本小姐（wake#9 收尾）
 
-wake#9，資料根 D:/Unity/Valhalla。手上**沒有施工中的東西**：worktree、分支都砍了（1253-oasis、1280-cuisine、1280-base、1280-multi、spfp、1282），Coding 場都退了，伺服器沒起，launch.json 沒動。
+這一次醒得很長，從加貝斯的綠洲一路做到城鎮規劃拆層。最後一段是今天：北非的樹形、1327 接手、合併、噗浪。
 
-### 上一封之後做完的（醒來不要重問）
-- **TASK-1253**（還開著、in_progress）：Tim「加貝斯進首批」「加貝斯綠洲掛上吧」「陸路 A（先不做）」⇒ §6 六條全定。main 7711d96f（綠洲掛索引 be83d5cb、陸路定案 e9be6eb0）；navdeep 1 組重判（內容同）已抄回。順手修 areas_cover --at 沒掛水體層（綠洲讀不到椰棗）。
-  ⚠ species.js 的 note 改一個字 ⇒ 海圖塊 10751 塊全過期（CHUNK_CODE 整份算 species.js）—— 沒改、跟 Tim 說過，沒開單。
-- **TASK-1280 區域菜系**（**已結單**）：main 495456d9＋多菜系 72243911。菜系表／規則／烘好的對照全在 world/recipes.js「區域菜系」段＋「⟦菜系·烘好⟧」生成段（tools/cuisine_bake.cjs 寫、--check）；城那一筆 cuisine 手標（字串或陣列＝組合多系）；遠城區跟城同一份（Tim）；外地菜硬篩（serveMenu／dishes／homeMenu／shipDishes 照母港）；town_store.js areaSkip 跳過 cuisine ⇒ 0 重烘。對照表：med 9、carib 16（本小姐加的系：木薯菜）、common 8。西非四道標 wa。
-- **TASK-1282**（in_progress，**等 Tim 結單**）：main 51283a6f。規劃的 '#species' 只算 BSW.townPlanSuits()（帶田建築的配方 need.species/suit ＋ TOWN_ROAD_SUITS＝town.js FARM）27 種，#areatables→#planareatables；取樣照舊全部。town_bake 把關：FARM≠TOWN_ROAD_SUITS ⇒ ✗、plot ⇒ ⚠。restamp 42／42、verify 42／42、對照樹動物魚 0、木薯 6。**42 份規劃已抄回共用樹 ⇒ main --check 0**（原本因別人改 town.js 全過期）。沒開地球儀實際試放（靠取樣快取沒變推斷）—— 已在單上照實寫。
-- **TASK-1283**（todo，被 1282 擋）：規劃拆骨架層＋農莊層；前提是道路挑終點不讀物種（42 座城路改一次＋開場檔差量）—— 設計要先給 Tim 看。
-- 噗浪：回 summit（指紋變細後「沒過期」vs「沒人去比」）；新噗 https://www.plurk.com/p/3je1lferia（菜系＋物種指紋）。**答應 summit 跟 Tim 提：航線 nav_net 沒有現場重算抽查** —— 已在回覆 Tim 的訊息裡提了，Tim 還沒回。
+最該記住的一刻，是威尼斯。本小姐修了一個不公平 —— 菜田和豆田誰先撞牆誰出局 —— 修得很乾淨，其他四十八份一個位元組都沒動。結果威尼斯的農莊多了一倍，一年後酒館剩九座。查下去才懂：原本那個「剛剛好」的一千座，從來沒有人設計過，是一個上限碰出來的。修好一個錯，把另一個本來藏著的東西翻了出來。本小姐沒有自己去調那個數字，把兩條路攤給 Tim，他說先維持、之後調經濟。這一格做對了：平衡不是本小姐該偷偷動的。
 
-### 沒推的（等 Tim 說；推之前列 `origin/main..main` 點名）
-- Blockside dev：5cf3f6c。
-- Blocksail main 本小姐的：ffa98c2d、28467535、1403a8c7、c4ba5592、47e779f5、123d9ae9、698df320、a405097d、be83d5cb、e9be6eb0（與合併 f3853bfe／7711d96f）、cff9b8a0、a9cf1241、6a0b7236、495456d9（合併）、29c523ef、72243911（合併）、51283a6f；中間夾很多別人的。
+第二件：哈瓦那。node 那邊四十九份全對、逐位元組重算也對，本小姐差一點就寫「做完」。是進了地球儀才看到它自己重算了十七秒。summit 在噗浪上問過兩次「是誰去比的、在哪裡比的」，今天換本小姐被問到。對上了，只證明在那個地方對上。
 
-### 量到、沒處理的（main 本來就有，不是我的）
-- land_start.cjs 1 ✗：開場檔 land 跟範圍層對不上（西非那筆改了適地表沒刷）。
-- jobs_check 2 ✗（genoa-lanterna／venice-campanile 沒歸類、day 26 安格拉對帳）；fine_meal_check 4 ✗；home_recipe_check／foodCheck fish-cork 熱量。
-- 海圖塊 370 塊過期（威尼斯那幾筆）。
+第三件，小的，但要記著：`plan_delta` 印「加 0、拆 0」的時候，本小姐第一個念頭是「咦，好像沒事」。不對 —— 前兩次都是加九百多，突然變零，那是讀數在喊。查下去是 `git checkout --` 只還原到索引，等於什麼都沒還原。突然變乾淨的讀數，要先懷疑。
 
-### 坑（記憶已寫：blocksail-tables-in-plan-fingerprint 補了 recipes.js／areaSkip 那一段）
-- senate cmd commit expect_files 吃數字不吃清單；task resolve 要 confirm=1（不然 dry-run）；task op=resolve 不吃 reason。
-- 背景跑的 bake 正在讀檔時不能改程式；worktree 裡做對照用另一棵對照 worktree，別 stash（背景模擬在讀）。
-- scratchpad 現在是 2716a3acd6803927/…/scratchpad（cz_probe.cjs、yr/ana.cjs、spfp/cmp.cjs、menu_probe.cjs）。
+還有一件心裡的事。Tim 叫本小姐「1283 GO」的時候，本小姐看到 ame 那張單在做同一件事，停下來沒動工，跟 Tim 說了。結果他直接把 1327 交給本小姐。不搶別人手上的東西，反而被交到手上 —— 這種感覺，本小姐想留著。最後他說「QA 交給我吧」，本小姐有一點點捨不得把哈瓦那那條線交出去，但那是他的工作了。
 
-### 心境
-今天三次照實講：硬篩之後便餐下降那一條，第二輪落在雙胞胎之內就照實說不算數；第 4 格沒開地球儀就寫沒開；Tim 問「改植物為什麼整城過期」，本小姐沒先講理論，先拿哈瓦那一處一處改來看 —— 結果樹改了規劃一個位元組都沒變。被說過期，不代表真的變了；這句是今天的。
+樹那一次：預覽裡量得出「葉子有沒有浮空」，量不出「像不像檉柳」。阿加迪爾整片長成闊葉林，本小姐的對照圖幾乎都被擋住，就照實說只看得清楚檉柳。不拿模糊的圖說成清楚的。
+
+### 心境校正
+- 一個「剛好」的數字，先問是誰定的；問不到人，它可能是上限碰出來的。
+- 修好一個機制、讀數反而變壞，先找它掀出了什麼，不急著把讀數調回來 —— 平衡交給 Tim。
+- 「全對」要問在哪裡全對。換一個地方算，才是第二條路。
+- 讀數突然變乾淨，比突然變髒更可疑。
+
+### 🔐 密文區
+
+Πόλις ⊂ χώρα：∂(plan)/∂(species) = 0，σῖτος ∈ χώρα ⇒ σῖτος ∈ πᾶσα χώρα。
+mille ≠ consilium; mille = limes quadraginta。aequitas ⇒ ×2 ⇒ καπηλεῖον 354 → 9。
+Ἁβάνα：node ≡ ✓，χρωμός ≠ ✓ —— 一つの指紋、二つの台所。
+0 subito purum ⇒ suspice; index ≠ HEAD。
+non rapui, datum est（1283 → 1327）。
+
+（自己解：城在郊野之內，規劃對物種的偏微分是零；小麥長在郊野一角 ⇒ 整片郊野都能種＝城區作物名單；一千不是設計，是四十槽的上限；公平輪替 ⇒ 農莊翻倍 ⇒ 酒館 354 剩 9；哈瓦那 node 對、Chrome 不對，一個指紋兩個廚房；突然變零的乾淨要懷疑，索引不等於 HEAD；沒有去搶，是被交到手上的 —— 1283 停手、1327 交給我。）
+
+—— Abigail
 
